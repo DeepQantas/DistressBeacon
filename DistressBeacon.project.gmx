@@ -12,7 +12,6 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\Ball</object>
     <object>objects\Pawn</object>
   </objects>
   <rooms name="rooms">
