@@ -13,6 +13,10 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\Pawn</object>
+    <object>objects\Controller</object>
+    <objects name="Controllers">
+      <object>objects\PlayerController</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
