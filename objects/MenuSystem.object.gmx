@@ -5,7 +5,7 @@
   <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>Controller</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,56 +25,28 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>keyUp = ord('W');
-keyLeft = ord('A');
-keyDown = ord('S');
-keyRight = ord('D');
+            <string>texture_set_interpolation(false);
 
-keyJump = vk_space;
-keyFire = ord('F');
-keyAltFire = ord('G');
-
-
+display_reset(0, true);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="1">
+    <event eventtype="9" enumb="27">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>332</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// Read inputs
-
-xAxis = 0; // Left or right button pressed? -1, 0 or 1
-yAxis = 0; // Up or down pressed? -1, 0 or 1
-
-if keyboard_check(keyLeft) xAxis = -1;
-if keyboard_check(keyRight) xAxis += 1; // If both pressed, becomes 0
-
-if keyboard_check(keyUp) yAxis = -1;
-if keyboard_check(keyDown) yAxis += 1; // If both pressed, becomes 0
-
-jump = keyboard_check(keyJump);
-fire = keyboard_check(keyFire);
-altFire = keyboard_check(keyAltFire);
-
-</string>
-          </argument>
-        </arguments>
       </action>
     </event>
   </events>

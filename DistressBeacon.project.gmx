@@ -8,15 +8,23 @@
   <sprites name="sprites">
     <sprite>sprites\sDefault</sprite>
     <sprite>sprites\sPawn</sprite>
+    <sprite>sprites\sPlayer</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bgGenTiles</background>
+    <background>background\bgGenWalls</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\Pawn</object>
+    <objects name="Pawns">
+      <object>objects\PlayerPawn</object>
+    </objects>
     <object>objects\Controller</object>
     <objects name="Controllers">
       <object>objects\PlayerController</object>
     </objects>
+    <object>objects\MenuSystem</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
